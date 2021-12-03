@@ -1,0 +1,44 @@
+* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+}
+body {
+				height: 100vh;
+				background: #ffaab5;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+}
+img {
+				border-radius: 5px;
+}
+img[alt='image'] {
+				width: 100%;
+}
+img[alt='shadow'] {
+				width: 90%;
+				opacity: 0.6;
+				filter: blur(5.5px);
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				z-index: -1;
+}
+div {
+				width: 50%;
+				position: relative;
+				padding: 10px;
+}
+@media(min-width: 600px){
+	img[alt='image'] {
+				width: 100%;
+}
+img[alt='shadow'] {
+	
+}
+div {
+	width: 20%;
+	
+}
+}
